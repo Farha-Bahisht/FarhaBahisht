@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+# Recreate the updated index.html with tech background after kernel reset
+html_with_tech_bg = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -18,26 +19,33 @@
       <a href="#projects">Projects</a>
       <a href="#resume">Resume</a>
       <button id="theme-toggle">🌓</button>
-
-
     </nav>
   </header>
 
   <section id="hero">
+    <div class="tech-bg">
+      <img src="assets/icons/kotlin.svg" alt="Kotlin">
+      <img src="assets/icons/python.svg" alt="Python">
+      <img src="assets/icons/js.svg" alt="JavaScript">
+      <img src="assets/icons/sql.svg" alt="SQL">
+      <img src="assets/icons/java.svg" alt="Java">
+      <img src="assets/icons/jetpack.svg" alt="Jetpack">
+      <img src="assets/icons/firebase.svg" alt="Firebase">
+      <img src="assets/icons/github.svg" alt="GitHub">
+    </div>
     <img src="assets/profile.jpeg" alt="Farha Bahisht" class="profile-pic" />
     <h1>Hi, I'm Farha 👋</h1>
     <p>I'm <span id="typing"></span><span class="cursor">|</span></p>
   </section>
 
-
-<div class="social-icons">
-  <a href="https://github.com/Farha-Bahisht" target="_blank" title="GitHub">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-  </a>
-  <a href="https://www.linkedin.com/in/farhabahisht" target="_blank" title="LinkedIn">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" />
-  </a>
-</div>
+  <div class="social-icons">
+    <a href="https://github.com/Farha-Bahisht" target="_blank" title="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+    </a>
+    <a href="https://www.linkedin.com/in/farhabahisht" target="_blank" title="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" />
+    </a>
+  </div>
 
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
@@ -51,25 +59,24 @@
   </section>
 
   <section id="experience" data-aos="fade-up">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item left">
-      <div class="content">
-        <h3>Sonarsense – Smartwatch App Developer</h3>
-        <p>Developed accessibility-first smartwatch features using AI, haptics, and Bluetooth. OSU Capstone Project.</p>
-        <span>Aug 2024 – May 2025</span>
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="content">
+          <h3>Sonarsense – Smartwatch App Developer</h3>
+          <p>Developed accessibility-first smartwatch features using AI, haptics, and Bluetooth. OSU Capstone Project.</p>
+          <span>Aug 2024 – May 2025</span>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <h3>OSU Wexner Medical – Jr. Android Developer</h3>
+          <p>Built and debugged patient-facing features in MyHealth App using Kotlin and Jetpack Compose.</p>
+          <span>Oct 2022 – May 2025</span>
+        </div>
       </div>
     </div>
-    <div class="timeline-item right">
-      <div class="content">
-        <h3>OSU Wexner Medical – Jr. Android Developer</h3>
-        <p>Built and debugged patient-facing features in MyHealth App using Kotlin and Jetpack Compose.</p>
-        <span>Oct 2022 – May 2025</span>
-      </div>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <section id="projects" data-aos="fade-up">
     <h2>Projects</h2>
@@ -93,7 +100,13 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
   <button onclick="scrollToTop()" id="topBtn" title="Go to top">⬆</button>
-
 </body>
 </html>
+"""
 
+# Save to downloadable file
+output_path = "/mnt/data/index-with-tech-bg.html"
+with open(output_path, "w") as f:
+    f.write(html_with_tech_bg)
+
+output_path
