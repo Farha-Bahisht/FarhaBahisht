@@ -1,5 +1,6 @@
-title: Farha Bahisht 
-#logo: 
-#description:
+title: Farha Bahisht
+# logo: /assets/img/logo.png  # Uncomment and provide path if needed
+# description: Your short site description here
 show_downloads: true
-theme: jekll-theme-minimal
+theme: jekyll-theme-minimal
+
