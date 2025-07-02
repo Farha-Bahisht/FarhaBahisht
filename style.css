@@ -82,6 +82,17 @@ h2 {
   animation: blink 1s infinite step-start;
 }
 
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00ffcc;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.4);
+  margin-bottom: 1rem;
+}
+
 @keyframes blink {
   50% { opacity: 0; }
 }
