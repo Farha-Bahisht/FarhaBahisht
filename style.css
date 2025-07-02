@@ -93,6 +93,50 @@ h2 {
   margin-bottom: 1rem;
 }
 
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 4px;
+  height: 100%;
+  background: #00ffcc;
+}
+
+.timeline-item {
+  margin: 2rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.timeline-item .content {
+  background: #161b22;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 12px rgba(0, 255, 204, 0.2);
+  max-width: 500px;
+}
+
+.timeline-item.left .content {
+  margin-left: 2rem;
+}
+
+.timeline-item.right .content {
+  margin-left: 2rem;
+}
+
+.timeline-item .content h3 {
+  margin: 0 0 0.5rem 0;
+  color: #00ffcc;
+}
+
 @keyframes blink {
   50% { opacity: 0; }
 }
