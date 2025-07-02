@@ -4,7 +4,7 @@
 
 This is the source code for my personal portfolio website, built with HTML, CSS, and JavaScript, and hosted using **GitHub Pages**.
 
-#🎯 **Live Site**: [https://yourusername.github.io/FarhaBahisht](https://yourusername.github.io/FarhaBahisht)
+#🎯 **Live Site**: [https://farha-bahisht.github.io/FarhaBahisht]
 
 ---
 
