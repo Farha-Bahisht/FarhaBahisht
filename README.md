@@ -1,7 +1,7 @@
-# FarhaBahisht
+# Farha Bahisht
 
 
-###Education 
+### Education 
 
 
 ### Work Experince 
